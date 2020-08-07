@@ -31,7 +31,7 @@ But this extension has a completely different logic and a much more resilient fu
 **You like this extension? Great! 👍**
 
 To be honest: I'm bad at trading. But at least I can code!
-To reward my work or to keep me motivated to improve this extension, you can send me any Bitcoin (BTC / XBT) amount to this address:
+To reward my work or to keep me motivated to improve this extension, please send me any Bitcoin (BTC / XBT) amount to this address:
 
 [![Donate](icons/btc-donate.png)](bitcoin:37kwck6dvNek6WyFNC1G5hSHrtr2o1gb1m)  
 **[37kwck6dvNek6WyFNC1G5hSHrtr2o1gb1m](bitcoin:37kwck6dvNek6WyFNC1G5hSHrtr2o1gb1m)**
