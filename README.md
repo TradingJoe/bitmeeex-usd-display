@@ -33,7 +33,7 @@ But this extension has a completely different logic and a much more resilient fu
 To be honest: I'm bad at trading. But at least I can code!
 To reward my work or to keep me motivated to improve this extension, you can send me any Bitcoin (BTC / XBT) amount to this address:
 
-![Donate](icons/btc-donate.png)
+![Donate](icons/btc-donate.png)  
 **`37kwck6dvNek6WyFNC1G5hSHrtr2o1gb1m`**
 
 I will convert it from coffee ☕️ into pure code.
