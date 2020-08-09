@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "BitMEEEX USD Display",
   "description": "Get some sanity into your gambling. Shows all prices in US Dollars instead of Bitcoin (XBT Symbol). Runs on bitmex.com only.",
-  "version": "0.2",
+  "version": "0.3",
   "author": "Trading Joe",
   "content_scripts": [
     {

@@ -1,10 +1,31 @@
+// culture sensitive parseFloat
+// parseFloatOpts('1,000.01') --> 1000.01
+// parseFloatOpts('1.000,01') --> 1000.01
+function parseFloatOpts(str) {
+
+  if (typeof str === "number") {
+    return str;
+  }
+
+  var ar = str.split(/\.|,/);
+
+  var value = '';
+  for (var i in ar) {
+    if (i > 0 && i == ar.length - 1) {
+      value += ".";
+    }
+    value += ar[i];
+  }
+  return Number(value);
+}
+
 // the BitMEX .BXBT Index tracks the Bitcoin price every minute.
 // this function is supposed to select the price from the header
 function extractBXBTindexPrice() {
   const symbols = Array.from(document.querySelectorAll('.instrument .symbol'));
   const bxbtSymbol = symbols.find(x => x.innerHTML === '.BXBT');
   if (bxbtSymbol) {
-    return parseFloat(bxbtSymbol.nextElementSibling.innerHTML);
+    return parseFloatOpts(bxbtSymbol.nextElementSibling.innerHTML);
   }
 }
 
@@ -33,9 +54,9 @@ function updateTextNode(node, indexPrice) {
     return;
   }
 
-  const amount = parseFloat(value.split(' ')[0]);
-  if(typeof amount === 'number'
-     && !isNaN(amount)) {
+  const amount = parseFloatOpts(value.split(' ')[0]);
+  if (typeof amount === 'number'
+    && !isNaN(amount)) {
 
     let amountInUsd = (amount * indexPrice).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' USD';
 
@@ -47,8 +68,14 @@ function updateTextNode(node, indexPrice) {
 function updatePage() {
   let indexPrice = extractBXBTindexPrice();
   if (indexPrice) {
-    let nodes = findAllTextNodesWithText(document.getElementById('content'), 'XBT');
-    nodes.forEach(node => updateTextNode(node, indexPrice))
+    const nodes = findAllTextNodesWithText(document.getElementById('content'), 'XBT');
+    nodes.forEach(node => updateTextNode(node, indexPrice));
+
+    // TODO, maybe
+    // let calculator = document.querySelector('.calculatorOutput');
+    // if (calculator) {
+    //   let nodes = findAllTextNodesWithText(calculator, '');
+    // }
   }
 }
 
