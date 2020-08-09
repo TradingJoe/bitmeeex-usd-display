@@ -17,7 +17,7 @@ But this extension has a completely different logic and a much more resilient fu
 * **Chrome Web Store**: review pending
 * **Firefox-Addons**: [install from store](https://addons.mozilla.org/de/firefox/addon/bitmeeex-usd-display/)
 * **Manually for Chrome / Chromium / Brave and friends**:
-  1. [Download the zip file](https://github.com/TradingJoe/bitmeeex-usd-display/releases/download/v0.2/bitmeeex-usd-display.zip)
+  1. [Download the zip file](https://github.com/TradingJoe/bitmeeex-usd-display/releases/download/v0.3/bitmeeex-usd-display.zip)
   2. Open the Extension Management page by navigating to `chrome://extensions` .
      * The Extension Management page can also be opened by clicking on the Chrome menu, hovering over **More Tools** then selecting **Extensions**.
   3. Enable Developer Mode by clicking the toggle switch next to **Developer mode**.
