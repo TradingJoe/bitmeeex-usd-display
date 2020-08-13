@@ -14,7 +14,7 @@ But this extension has a completely different logic and a much more resilient fu
 
 ## Installation
 
-* **Chrome Web Store**: review pending
+* **Chrome Web Store**: Rejected! 🤬
 * **Firefox-Addons**: [install from store](https://addons.mozilla.org/de/firefox/addon/bitmeeex-usd-display/)
 * **Manually for Chrome / Chromium / Brave and friends**:
   1. [Download the zip file](https://github.com/TradingJoe/bitmeeex-usd-display/releases/download/v0.3/bitmeeex-usd-display.zip)
